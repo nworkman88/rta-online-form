@@ -1,0 +1,97 @@
+/* Style the body */
+body {
+    background-image: url("../images/keys.png") !important;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif !important;
+}
+/* Style the home screen */
+#home-card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  text-align: center;
+  box-shadow: 0 0 30px #0c2e63;
+}
+#home-card p {
+  font-weight: 200;
+  color: #58595a;
+  margin-top: 20px;
+  font-size: 120%;
+}
+
+h3 {
+  font-weight: 600 !important;
+  text-transform: uppercase;
+}
+
+#home-card a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#rta-online-logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 992px) {
+  #rta-online-logo {
+    width: 300px;
+  }
+}
+/* Style the form */
+img {
+  border-radius: 100%;
+}
+#reg-form-card {
+  margin-top: 50px;
+}
+label {
+  font-size: 11pt !important;
+}
+#reg-form {
+  padding: 50px;
+  }
+  .row {
+    margin-top: 15px !important;
+  }
+  input, select {
+    border: none !important;
+    background-color: #eee !important;
+  }
+  .input-group-text {
+    border: none !important;
+    background-color: #bbb !important;
+    color: white !important;
+  }
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab {
+    display: none;
+  }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #04AA6D;
+  }

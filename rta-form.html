@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <title>RTA Online Application</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="reg-form-card">
+            <form id="reg-form" action="">
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+                    <div class="row">
+                        <div class="col col-lg-3 my-auto"> 
+                            <img src="images/landlord.png" alt="landlord">
+                        </div>
+                        <div class="col col-lg-9  my-auto">
+                            <h1>Part 1</h1>
+                            <p>Welcome to RTA Online! We appreciate you and your service to CMHA.</p>
+                            <p>Let's start by gathering some basic information about your property.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <h3>Part 1 - Basic Information</h3>
+                    <hr />
+                    <p>All fields must be completed.</p>
+                    <div class="form-group row">
+                        <div class="col-12 col-lg-6">
+                            <label for="nameOfPHA" class="form-label">1) Name of PHA</label>
+                            <input type="text" class="form-control is-valid" id="nameOfPHA"
+                                value="Cincinnati Metropolitan Housing Authority" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="address-of-unit" class="form-label">2. Address of Unit</label>
+                            <input type="text" id="address-of-unit" name="address-of-unit" class="form-control is-valid"
+                                required />
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6 col-lg-3">
+                            <label for="req-lease-start" class="form-label">3. Requested Lease Start Date</label>
+                            <input type="date" id="req-lease-start" name="req-lease-start"
+                                class="form-control is-valid" />
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <label for="number-of-bedrooms" class="form-label">4. Number of Bedrooms</label>
+                            <input type="number" id="number-of-bedrooms" name="number-of-bedrooms"
+                                class="form-control is-valid" />
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <label for="year-built" class="form-label">5. Year Constructed</label>
+                            <input type="text" id="year-built" name="year-built" class="form-control is-valid" />
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <label for="proposed-rent" class="form-label">6. Proposed Rent</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="text" id="proposed-rent" name="proposed-rent"
+                                    class="form-control is-valid" />
+                            </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6 col-lg-3">
+                            <label for="sec-deposit-amount" class="form-label">7. Security Deposit Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="text" id="sec-deposit-amount name=" sec-deposit-amount
+                                    class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <label for="date-avlb-inspection" class="form-label">8. Date Available for
+                                Inspection</label>
+                            <input type="date" id="date-avlb-inspection" name="date-avlb-inspection"
+                                class="form-control" />
+                        </div>
+                        <div class="col-6 col-lg-2">
+                            <label for="structure-type" class="form-label">9. Structure Type</label>
+                            <select class="form-control" required>
+                                <option value="">Select One</option>
+                                <option value="">House</option>
+                                <option value="">Duplex</option>
+                                <option value="">Rowhouse/Townhouse</option>
+                                <option value="">Low-Rise (4 stories or less)</option>
+                                <option value="">High-Rise (5+ stories)</option>
+                                <option value="">Manufactured Home</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <label for="proposed-rent" class="form-label">10. If this unit is subsidized, indicate type
+                                of subsidy:</label>
+                            <select class="form-control" required>
+                                <option value="">Select One</option>
+                                <option value="">Section 202</option>
+                                <option value="">Tax Credit</option>
+                                <option value="">Section 236 (insured or uninsured)</option>
+                                <option value="">Section 515 Rural Development</option>
+                                <option value="">Section 515 Rural Development</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab">Contact Info:
+                    <p><input class="form-control" placeholder="E-mail..." oninput="this.className = ''"></p>
+                    <p><input class="form-control" placeholder="Phone..." oninput="this.className = ''"></p>
+                </div>
+
+                <div class="tab">Birthday:
+                    <p class="fade"><input placeholder="dd" oninput="this.className = ''"></p>
+                    <p><input class="form-control" placeholder="mm" oninput="this.className = ''"></p>
+                    <p><input class="form-control" placeholder="yyyy" oninput="this.className = ''"></p>
+                </div>
+
+                <div class="tab">Login Info:
+                    <p><input class="form-control" placeholder="Username..." oninput="this.className = ''"></p>
+                    <p><input class="form-control" placeholder="Password..." oninput="this.className = ''"></p>
+                </div>
+
+                <div style="overflow:auto;">
+                    <div style="float:right;">
+                        <button class="btn btn-warning" type="button" id="prevBtn"
+                            onclick="nextPrev(-1)">Previous</button>
+                        <button class="btn btn-primary" type="button" id="nextBtn" type="submit"
+                            onclick="nextPrev(1)">NEXT</button>
+                    </div>
+                </div>
+
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
